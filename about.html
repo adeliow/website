@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  a { color: #12A79C; text-decoration: none; }
+  a:hover { color: #0E8A81; }
+  * { box-sizing: border-box; }
+</style>
+</helmet>
+
+<div style="font-family:Poppins,system-ui,sans-serif;color:#1E2A29;background:#ffffff;width:100%;overflow-x:hidden;">
+
+  <header style="position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #E6F6F4;">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="index.html" style="display:flex;align-items:center;flex-shrink:0;"><img src="assets/logo.png" alt="Bee Well Indonesia — home" style="display:block;height:40px;width:auto;" /></a>
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex-end;">
+        <a href="#top" style="font-size:16px;font-weight:600;color:#12A79C;border-bottom:3px solid #FCC208;padding-bottom:3px;">About us</a>
+        <a href="events.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Events</a>
+        <a href="partners.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Our partners</a>
+        <a href="community.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Our community</a>
+        <a href="index.html#start" style="font-size:16px;font-weight:600;color:#ffffff;background:#12A79C;padding:13px 24px;border-radius:999px;white-space:nowrap;" style-hover="background:#0E8A81;color:#ffffff;">Book a consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative;background:#12A79C;color:#ffffff;border-bottom-right-radius:clamp(60px,10vw,160px);overflow:hidden;">
+    <div style="position:absolute;top:40px;right:56px;width:80px;height:80px;opacity:0.2;">
+      <div style="position:absolute;left:26px;top:0;width:26px;height:80px;border-radius:13px;background:#ffffff;"></div>
+      <div style="position:absolute;top:26px;left:0;height:26px;width:80px;border-radius:13px;background:#ffffff;"></div>
+    </div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:clamp(44px,6vw,80px) 32px clamp(52px,7vw,88px);display:flex;flex-direction:column;gap:20px;">
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);">
+        <a href="index.html" style="color:rgba(255,255,255,0.8);" style-hover="color:#FCC208;">Home</a>
+        <span>/</span>
+        <span style="color:#ffffff;font-weight:500;">About us</span>
+      </div>
+      <div style="align-self:flex-start;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#0A5F59;background:#FCC208;padding:8px 16px;border-radius:999px;">About Bee Well</div>
+      <h1 style="margin:0;font-size:clamp(34px,6vw,66px);line-height:1.05;font-weight:700;letter-spacing:-0.02em;color:#ffffff;max-width:16ch;text-wrap:balance;">The people behind the programme</h1>
+      <p style="margin:0;font-size:clamp(17px,2vw,21px);line-height:1.55;color:rgba(255,255,255,0.92);max-width:60ch;text-wrap:pretty;">Bee Well was built by educators and wellbeing specialists who kept seeing the same thing: schools running good programmes that never talked to each other. We exist to connect them.</p>
+      <div style="display:flex;gap:clamp(28px,5vw,56px);flex-wrap:wrap;margin-top:12px;">
+        <div><div style="font-size:clamp(34px,4.4vw,44px);font-weight:700;color:#FCC208;line-height:1;">10</div><div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:6px;">partner schools</div></div>
+        <div><div style="font-size:clamp(34px,4.4vw,44px);font-weight:700;color:#FCC208;line-height:1;">—</div><div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:6px;">students reached</div></div>
+        <div><div style="font-size:clamp(34px,4.4vw,44px);font-weight:700;color:#FCC208;line-height:1;">—</div><div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:6px;">years running</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(32px,5vw,64px);align-items:center;">
+    <div style="display:flex;flex-direction:column;gap:18px;min-width:0;">
+      <div style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#12A79C;">Where we started</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#0A5F59;text-wrap:balance;">Founded to fix a coordination problem</h2>
+      <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;max-width:62ch;text-wrap:pretty;">Schools rarely lack care. What they lack is a way to see all of it at once — the counsellor, the canteen, the sports programme, the pastoral team — and to know whether it adds up to a student actually being well.</p>
+      <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;max-width:62ch;text-wrap:pretty;">Bee Well started as consulting work with a handful of Jakarta schools and grew into a single assessed framework that a school can run year after year, rather than a series of one-off workshops.</p>
+    </div>
+    <div style="min-width:0;height:clamp(260px,38vw,400px);border-radius:32px 160px 32px 160px;background:url('assets/photo-team.jpeg') center/cover no-repeat;"></div>
+  </section>
+
+  <section style="position:relative;background:#12A79C;color:#ffffff;border-top-left-radius:clamp(60px,10vw,160px);border-bottom-right-radius:clamp(60px,10vw,160px);overflow:hidden;">
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px;">
+      <div style="display:flex;flex-direction:column;gap:16px;max-width:760px;">
+        <div style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#FCC208;">How we work</div>
+        <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#ffffff;text-wrap:balance;">What a year with Bee Well looks like</h2>
+        <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:rgba(255,255,255,0.9);max-width:62ch;text-wrap:pretty;">We assess first and prescribe second. Every engagement follows the same four stages, so schools know what they are committing to before they start.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px;margin-top:44px;">
+        <div style="background:#ffffff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:14px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#12A79C;">01</div>
+          <h3 style="margin:0;font-size:22px;font-weight:700;color:#0A5F59;">Assess</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#4C5C5B;">We audit what the school already runs across all framework areas, and survey students and staff.</p>
+        </div>
+        <div style="background:#ffffff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:14px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#12A79C;">02</div>
+          <h3 style="margin:0;font-size:22px;font-weight:700;color:#0A5F59;">Map</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#4C5C5B;">The audit becomes a single picture of strengths, gaps and overlaps, presented to school leadership.</p>
+        </div>
+        <div style="background:#ffffff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:14px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#12A79C;">03</div>
+          <h3 style="margin:0;font-size:22px;font-weight:700;color:#0A5F59;">Build</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#4C5C5B;">We design the year's programme around the gaps, using the school's existing people and resources first.</p>
+        </div>
+        <div style="background:#ffffff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:14px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#12A79C;">04</div>
+          <h3 style="margin:0;font-size:22px;font-weight:700;color:#0A5F59;">Review</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:#4C5C5B;">We re-assess at the end of the cycle, so the school can see movement rather than assume it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px;">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px;margin-bottom:32px;">
+      <div style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#12A79C;">Our team</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#0A5F59;text-wrap:balance;">Who you'll actually be working with</h2>
+      <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;max-width:62ch;text-wrap:pretty;">Schools ask this before they ask anything else, so it's worth answering here rather than in a first call.</p>
+    </div>
+    <div style="border:2px dashed #9FD9D3;background:#E6F6F4;border-radius:20px;padding:16px 20px;font-size:15px;color:#0A5F59;margin-bottom:28px;">Placeholder section — needs real names, roles and headshots. Remove entirely if the team would rather not be listed publicly.</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;">
+      <div><div style="aspect-ratio:1;border-radius:24px;background:repeating-linear-gradient(135deg,#E6F6F4,#E6F6F4 10px,#DCF0ED 10px,#DCF0ED 20px);margin-bottom:12px;"></div><div style="font-weight:600;font-size:16px;">Name</div><div style="font-size:15px;color:#4C5C5B;">Role</div></div>
+      <div><div style="aspect-ratio:1;border-radius:24px;background:repeating-linear-gradient(135deg,#E6F6F4,#E6F6F4 10px,#DCF0ED 10px,#DCF0ED 20px);margin-bottom:12px;"></div><div style="font-weight:600;font-size:16px;">Name</div><div style="font-size:15px;color:#4C5C5B;">Role</div></div>
+      <div><div style="aspect-ratio:1;border-radius:24px;background:repeating-linear-gradient(135deg,#E6F6F4,#E6F6F4 10px,#DCF0ED 10px,#DCF0ED 20px);margin-bottom:12px;"></div><div style="font-weight:600;font-size:16px;">Name</div><div style="font-size:15px;color:#4C5C5B;">Role</div></div>
+      <div><div style="aspect-ratio:1;border-radius:24px;background:repeating-linear-gradient(135deg,#E6F6F4,#E6F6F4 10px,#DCF0ED 10px,#DCF0ED 20px);margin-bottom:12px;"></div><div style="font-weight:600;font-size:16px;">Name</div><div style="font-size:15px;color:#4C5C5B;">Role</div></div>
+    </div>
+  </section>
+
+  <section style="background:#F1F2F2;">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,96px) 32px;">
+      <div style="display:flex;flex-direction:column;gap:16px;max-width:720px;margin-bottom:32px;">
+        <div style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#12A79C;">Schools we work with</div>
+        <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#0A5F59;">Ten schools across Indonesia</h2>
+        <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;">National, international and bilingual schools, from preschool through secondary.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 clamp(32px,5vw,56px);">
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-highscope.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">HighScope Indonesia Bintaro</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-wellington.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Wellington College</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-sampoerna.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Sampoerna Academy</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-mindchamps.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">MindChamps International Preschool</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-nzschool.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">New Zealand School Jakarta</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-lazuardi.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Lazuardi Al-Falah</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-labschool.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Labschool Cirendeu</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-avicenna.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Avicenna Leadership School</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-sbr.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Sekolah Bogor Raya</span></div>
+        <div style="display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid #DDE2E1;"><img src="assets/p-scuola.png" alt="" style="width:64px;height:34px;object-fit:contain;flex:none;" /><span style="font-size:16px;">Scuola</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px;">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:720px;margin-bottom:28px;">
+      <div style="font-size:14px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#12A79C;">Certifications</div>
+      <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#0A5F59;">Accreditation and certifications</h2>
+      <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;">What Bee Well holds, and what it means for a school signing on.</p>
+    </div>
+    <div style="border:2px dashed #9FD9D3;background:#E6F6F4;border-radius:20px;padding:16px 20px;font-size:15px;color:#0A5F59;margin-bottom:24px;">Placeholder section — needs the actual list of certifications Bee Well holds before this ships.</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+      <div style="border:2px dashed #DDE2E1;border-radius:24px;padding:32px;text-align:center;color:#7A8A89;font-size:15px;"><div style="width:44px;height:44px;border-radius:50%;background:#E6F6F4;margin:0 auto 14px;"></div>Certification name<br />Issuing body · Year</div>
+      <div style="border:2px dashed #DDE2E1;border-radius:24px;padding:32px;text-align:center;color:#7A8A89;font-size:15px;"><div style="width:44px;height:44px;border-radius:50%;background:#E6F6F4;margin:0 auto 14px;"></div>Certification name<br />Issuing body · Year</div>
+      <div style="border:2px dashed #DDE2E1;border-radius:24px;padding:32px;text-align:center;color:#7A8A89;font-size:15px;"><div style="width:44px;height:44px;border-radius:50%;background:#E6F6F4;margin:0 auto 14px;"></div>Certification name<br />Issuing body · Year</div>
+    </div>
+  </section>
+
+  <section style="background:#E6F6F4;">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,96px) 32px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;">
+      <h2 style="margin:0;font-size:clamp(28px,4.2vw,46px);line-height:1.12;font-weight:700;letter-spacing:-0.02em;color:#0A5F59;">Want to talk about your school?</h2>
+      <p style="margin:0;font-size:clamp(16px,1.8vw,18px);line-height:1.65;color:#4C5C5B;max-width:56ch;">We'll walk you through the assessment and what a first year would involve.</p>
+      <a href="index.html#start" style="margin-top:12px;font-size:17px;font-weight:600;color:#ffffff;background:#12A79C;padding:18px 32px;border-radius:999px;" style-hover="background:#0E8A81;color:#ffffff;">Book a consultation</a>
+      <div style="font-size:15px;color:#4C5C5B;">Free 30-minute call · No commitment</div>
+    </div>
+  </section>
+
+  <footer style="background:#0A5F59;color:rgba(255,255,255,0.82);">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,72px) 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:clamp(28px,4vw,48px);">
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <a href="index.html" style="display:flex;align-items:center;background:#ffffff;border-radius:14px;padding:10px 14px;align-self:flex-start;"><img src="assets/logo.png" alt="Bee Well Indonesia — home" style="display:block;height:32px;width:auto;" /></a>
+        <p style="margin:0;font-size:15px;line-height:1.6;max-width:320px;">A 360° school wellbeing consultancy, based in Indonesia.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Programme</div>
+        <a href="index.html#system" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our system</a>
+        <a href="index.html#how" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">How it works</a>
+        <a href="index.html#start" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Book a consultation</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Organisation</div>
+        <a href="#top" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">About us</a>
+        <a href="partners.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our partners</a>
+        <a href="events.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Events</a>
+        <a href="community.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our community</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Contact</div>
+        <a href="mailto:hello@beewellindonesia.com" style="font-size:15px;color:rgba(255,255,255,0.82);overflow-wrap:anywhere;" style-hover="color:#FCC208;">hello@beewellindonesia.com</a>
+        <a href="https://instagram.com/beewellindonesia" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Instagram</a>
+        <a href="#top" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">LinkedIn</a>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:0 auto;padding:24px 32px 48px;border-top:1px solid rgba(255,255,255,0.16);font-size:14px;color:rgba(255,255,255,0.62);">© 2026 Bee Well Indonesia · Redesign concept</div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

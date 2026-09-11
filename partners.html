@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  a { color: #12A79C; text-decoration: none; }
+  a:hover { color: #0E8A81; }
+  * { box-sizing: border-box; }
+</style>
+</helmet>
+
+<div style="font-family:Poppins,system-ui,sans-serif;color:#1E2A29;background:#ffffff;width:100%;overflow-x:hidden;">
+
+  <header style="position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #E6F6F4;">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="index.html" style="display:flex;align-items:center;flex-shrink:0;"><img src="assets/logo.png" alt="Bee Well Indonesia — home" style="display:block;height:40px;width:auto;" /></a>
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex-end;">
+        <a href="about.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">About us</a>
+        <a href="events.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Events</a>
+        <a href="#top" style="font-size:16px;font-weight:600;color:#12A79C;border-bottom:3px solid #FCC208;padding-bottom:3px;">Our partners</a>
+        <a href="community.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Our community</a>
+        <a href="index.html#start" style="font-size:16px;font-weight:600;color:#ffffff;background:#12A79C;padding:13px 24px;border-radius:999px;white-space:nowrap;" style-hover="background:#0E8A81;color:#ffffff;">Book a consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative;background:#12A79C;color:#ffffff;border-bottom-right-radius:clamp(60px,10vw,160px);overflow:hidden;">
+    <div style="position:absolute;top:40px;right:56px;width:80px;height:80px;opacity:0.2;">
+      <div style="position:absolute;left:26px;top:0;width:26px;height:80px;border-radius:13px;background:#ffffff;"></div>
+      <div style="position:absolute;top:26px;left:0;height:26px;width:80px;border-radius:13px;background:#ffffff;"></div>
+    </div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:clamp(44px,6vw,80px) 32px clamp(52px,7vw,88px);display:flex;flex-direction:column;gap:20px;">
+      <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);">
+        <a href="index.html" style="color:rgba(255,255,255,0.8);" style-hover="color:#FCC208;">Home</a>
+        <span>/</span>
+        <span style="color:#ffffff;font-weight:500;">Our partners</span>
+      </div>
+      <h1 style="margin:0;font-size:clamp(34px,6vw,66px);line-height:1.05;font-weight:700;letter-spacing:-0.02em;color:#ffffff;">Our partners</h1>
+      <p style="margin:0;font-size:clamp(17px,2vw,21px);line-height:1.55;color:rgba(255,255,255,0.92);max-width:60ch;text-wrap:pretty;">The schools we run programmes with, the specialists who deliver them, and the organisations that help us reach further.</p>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,80px) 32px 0;display:flex;flex-direction:column;gap:24px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <h2 style="margin:0;font-size:clamp(26px,3.4vw,36px);font-weight:700;letter-spacing:-0.015em;color:#0A5F59;">Partner schools</h2>
+      <span style="font-size:15px;color:#4C5C5B;">Schools running a Bee Well programme</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;">
+      <sc-for list="{{ schools }}" as="logo" hint-placeholder-count="10">
+        <div style="height:108px;background:#F1F2F2;border-radius:22px;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="{{ logo.src }}" alt="{{ logo.name }}" style="max-width:100%;max-height:100%;object-fit:contain;" /></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,80px) 32px;display:flex;flex-direction:column;gap:clamp(40px,6vw,64px);">
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <h2 style="margin:0;font-size:clamp(26px,3.4vw,36px);font-weight:700;letter-spacing:-0.015em;color:#0A5F59;">Programme partners</h2>
+      <p style="margin:0;font-size:17px;line-height:1.65;color:#4C5C5B;max-width:62ch;">Psychologists, nutritionists and facilitators who deliver sessions alongside our team.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+        <sc-for list="{{ health }}" as="logo" hint-placeholder-count="12">
+          <div style="height:96px;background:#F1F2F2;border-radius:20px;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="{{ logo.src }}" alt="{{ logo.name }}" style="max-width:100%;max-height:100%;object-fit:contain;" /></div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <h2 style="margin:0;font-size:clamp(26px,3.4vw,36px);font-weight:700;letter-spacing:-0.015em;color:#0A5F59;">Supporters and media</h2>
+      <p style="margin:0;font-size:17px;line-height:1.65;color:#4C5C5B;max-width:62ch;">Organisations that fund, host or help us tell the story.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;">
+        <sc-for list="{{ supporters }}" as="logo" hint-placeholder-count="3">
+          <div style="height:96px;background:#F1F2F2;border-radius:20px;display:flex;align-items:center;justify-content:center;padding:16px;"><img src="{{ logo.src }}" alt="{{ logo.name }}" style="max-width:100%;max-height:100%;object-fit:contain;" /></div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#12A79C;color:#ffffff;border-top-left-radius:clamp(60px,10vw,160px);">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,96px) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(32px,5vw,64px);align-items:center;">
+      <blockquote style="margin:0;display:flex;flex-direction:column;gap:20px;">
+        <div style="font-size:clamp(56px,7vw,88px);line-height:0.7;font-weight:700;color:#FCC208;height:clamp(34px,4vw,50px);">&ldquo;</div>
+        <div style="font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#FCC208;">Partner story</div>
+        <div style="font-size:clamp(22px,3vw,34px);line-height:1.35;font-weight:600;letter-spacing:-0.01em;text-wrap:pretty;">Placeholder for a quote from a partner school — one or two sentences on what running the programme changed.</div>
+        <div>
+          <div style="font-size:17px;font-weight:600;">Name, role</div>
+          <div style="font-size:17px;color:rgba(255,255,255,0.78);">School name, city</div>
+        </div>
+      </blockquote>
+      <div style="min-width:0;height:clamp(240px,32vw,320px);border-radius:32px 160px 32px 160px;background:url('assets/photo-team.jpeg') center/cover no-repeat;"></div>
+    </div>
+  </section>
+
+  <section style="background:#F1F2F2;">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,7vw,80px) 32px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <h2 style="margin:0;font-size:clamp(28px,4vw,42px);line-height:1.15;font-weight:700;letter-spacing:-0.015em;color:#0A5F59;">Want to partner with us?</h2>
+        <p style="margin:0;font-size:18px;line-height:1.6;color:#4C5C5B;max-width:56ch;">Whether you run a school, a clinic or a foundation, we'd like to hear what you're working on.</p>
+      </div>
+      <a href="index.html#start" style="flex-shrink:0;font-size:17px;font-weight:600;color:#ffffff;background:#12A79C;padding:18px 32px;border-radius:999px;" style-hover="background:#0E8A81;color:#ffffff;">Get in touch</a>
+    </div>
+  </section>
+
+  <footer style="background:#0A5F59;color:rgba(255,255,255,0.82);">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,72px) 32px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:clamp(28px,4vw,48px);">
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <a href="index.html" style="display:flex;align-items:center;background:#ffffff;border-radius:14px;padding:10px 14px;align-self:flex-start;"><img src="assets/logo.png" alt="Bee Well Indonesia — home" style="display:block;height:32px;width:auto;" /></a>
+        <p style="margin:0;font-size:15px;line-height:1.6;max-width:320px;">A 360° school wellbeing consultancy, based in Indonesia.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Programme</div>
+        <a href="index.html#system" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our system</a>
+        <a href="index.html#how" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">How it works</a>
+        <a href="index.html#start" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Book a consultation</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Organisation</div>
+        <a href="about.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">About us</a>
+        <a href="#top" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our partners</a>
+        <a href="events.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Events</a>
+        <a href="community.html" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Our community</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#FCC208;">Contact</div>
+        <a href="mailto:hello@beewellindonesia.com" style="font-size:15px;color:rgba(255,255,255,0.82);overflow-wrap:anywhere;" style-hover="color:#FCC208;">hello@beewellindonesia.com</a>
+        <a href="https://instagram.com/beewellindonesia" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">Instagram</a>
+        <a href="#top" style="font-size:15px;color:rgba(255,255,255,0.82);" style-hover="color:#FCC208;">LinkedIn</a>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:0 auto;padding:24px 32px 48px;border-top:1px solid rgba(255,255,255,0.16);font-size:14px;color:rgba(255,255,255,0.62);">© 2026 Bee Well Indonesia · Redesign concept</div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const a = (src, name) => ({ src: "assets/" + src, name });
+    return {
+      schools: [
+        a("p-highscope.png", "HighScope Indonesia Bintaro"),
+        a("p-wellington.png", "Wellington College"),
+        a("p-sampoerna.png", "Sampoerna Academy"),
+        a("p-mindchamps.png", "MindChamps International Preschool"),
+        a("p-nzschool.png", "New Zealand School Jakarta"),
+        a("p-lazuardi.png", "Lazuardi Al-Falah"),
+        a("p-labschool.png", "Labschool Cirendeu"),
+        a("p-avicenna.png", "Avicenna Leadership School"),
+        a("p-sbr.png", "Sekolah Bogor Raya"),
+        a("p-scuola.png", "Scuola"),
+        a("p-alamatelier.png", "iSmile Alam Atelier School"),
+        a("p-kidsrepublic.png", "Kids Republic"),
+        a("p-islamicvillage.png", "Islamic Village School"),
+        a("p-smm.png", "Sekolah Murid Merdeka"),
+        a("p-ilon.png", "ILON Academy"),
+        a("p-kipina.png", "Kipinä"),
+        a("p-nfacademy.png", "NF Academy"),
+        a("p-rainbowcastle.png", "Rainbow Castle"),
+        a("p-kiddiecare.png", "Kiddie Care Centre")
+      ],
+      health: [
+        a("h-sehatq.png", "SehatQ"),
+        a("h-tigagenerasi.png", "TigaGenerasi"),
+        a("h-prudential.png", "Prudential"),
+        a("h-mayapada.png", "Mayapada Hospital"),
+        a("h-ciputra.png", "Ciputra Hospital"),
+        a("h-bunda.png", "BUNDA"),
+        a("h-medikaloka.png", "Medikaloka"),
+        a("h-diagnos.png", "Diagnos Clinical Laboratory"),
+        a("h-nala.png", "Nala Genetics"),
+        a("h-sammarie.png", "SamMarie"),
+        a("h-fdc.png", "FDC Dental Clinic"),
+        a("h-puriimunisasi.png", "Puri Imunisasi")
+      ],
+      supporters: [
+        a("s-ungc.png", "United Nations Global Compact"),
+        a("s-dompetdhuafa.png", "Dompet Dhuafa"),
+        a("s-gigi.jpeg", "Gigi Art of Dance")
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
