@@ -16,15 +16,23 @@
   a { color: #12A79C; text-decoration: none; }
   a:hover { color: #0E8A81; }
   * { box-sizing: border-box; }
+  @media (max-width: 720px) {
+    .site-nav-shell { padding: 12px 20px !important; flex-wrap: wrap; gap: 12px !important; }
+    .site-nav-shell > a { width: 100%; }
+    .site-nav-shell img { height: 34px !important; }
+    .site-nav { width: 100%; justify-content: flex-start !important; gap: 10px 16px !important; }
+    .site-nav a { font-size: 14px !important; }
+    .site-nav a:last-child { padding: 10px 16px !important; }
+  }
 </style>
 </helmet>
 
 <div style="font-family:Poppins,system-ui,sans-serif;color:#1E2A29;background:#ffffff;width:100%;overflow-x:hidden;">
 
   <header style="position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #E6F6F4;">
-    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <div class="site-nav-shell" style="max-width:1240px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
       <a href="index.html" style="display:flex;align-items:center;flex-shrink:0;"><img src="assets/logo.png" alt="Bee Well Indonesia — home" style="display:block;height:40px;width:auto;" /></a>
-      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex-end;">
+      <nav class="site-nav" style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex-end;">
         <a href="about.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">About us</a>
         <a href="events.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Events</a>
         <a href="partners.html" style="font-size:16px;font-weight:500;color:#1E2A29;" style-hover="color:#12A79C;">Our partners</a>
